@@ -1,0 +1,99 @@
+/* Mobile first */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(images/800px.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+nav a:hover:not(:nth-child(2)) {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav a:nth-child(2) {
+    box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.5) ;
+    border: white 0.5px solid;
+    font-weight: bold;
+}
+
+article {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: white 0.5px solid;
+    border-radius: 20px;
+    display: flex;
+}
+
+
+
+/* Tablet version */
+@media (min-width: 500px) {
+    h1 {
+        color: pink;
+    }
+
+    body {
+        background-color: rgb(245, 241, 241);
+        background-image: none;
+    }
+
+    main {
+        background-color: rgb(140, 140, 140);
+        border-radius: 30px;
+    }
+}
+
+
+/* Desktop version */
+@media (min-width: 800px) {
+    h1 {
+        color: rgb(63, 7, 17);
+    }
+
+    body {
+        background-image: url(images/800pxdesktop.jpg);
+    }
+
+    main {
+        background-color: rgba(183, 182, 182, 0.4);
+
+    }
+}
