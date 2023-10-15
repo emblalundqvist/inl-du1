@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Barlow_C';
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Barlow_S';
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf) ;
+}
+
+@font-face {
+    font-family: 'Bungee_O';
+    src: url(fonts/Bungee_Outline/BungeeOutline-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: 'Bungee_S';
+    src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf) ;
+}
+
+
+
+
+
+
+
+
+
 /* Mobile first */
 
 * {
@@ -12,6 +40,8 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed; 
+    font-family: 'Barlow_C';
+    color: rgb(244, 236, 236);
 }
 
 main {
@@ -19,8 +49,8 @@ main {
 }
 
 h1 {
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(244, 236, 236);
+    font-family: 'Bungee_S';
 }
 
 /*
@@ -99,8 +129,10 @@ aside > div:nth-child(n+2) {
 
 aside > div:nth-child(n+2) div {
     flex-grow: 1;
-    background-color: rgb(14, 185, 185);
+    background-color: rgb(2, 8, 30);
+    color: rgb(144, 3, 3);
 }
+
 
 
 /*
@@ -116,7 +148,8 @@ aside > div:nth-child(n+2) div {
  }
 
 .rutor div {
-    background-color: blueviolet;
+    background-color: rgb(144, 3, 3);
+    color: rgb(2, 8, 30);
 }
 
 .rutor div:nth-child(1) {
@@ -144,7 +177,7 @@ aside > div:nth-child(n+2) div {
 /* Tablet version */
 @media (min-width: 500px) {
     h1 {
-        color: pink;
+        color: rgb(244, 236, 236);
     }
 
     body {
@@ -190,7 +223,7 @@ aside > div:nth-child(n+2) div {
 /* Desktop version */
 @media (min-width: 800px) {
     h1 {
-        color: rgb(63, 7, 17);
+        color: rgb(244, 236, 236);
     }
 
     body {
@@ -219,9 +252,7 @@ aside > div:nth-child(n+2) div {
         flex-grow: 2;
     }
 
-    article > div:nth-child(2) {
-        background-color: brown;
-        
+    article section > div:nth-child(2) {
         flex-basis: 0;
         flex-grow: 3;
         
