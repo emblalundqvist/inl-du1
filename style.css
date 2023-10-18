@@ -18,14 +18,13 @@
     src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf) ;
 }
 
-
 :root {
     --font-size-changer: 1;
 }
 
 
-
 /* Mobile first */
+
 
 * {
     box-sizing: border-box;
@@ -95,15 +94,14 @@ ol {
     margin-top: 2px;
 }
 
-.rutor_1 p, 
-.rutor_2 p {
+#rutor_1 p, 
+#rutor_2 p {
     font-size: 2.8vw;
 }
 
 nav a {
     font-size: 3.5vw;
 }
-
 
 
 /*
@@ -229,8 +227,8 @@ article:last-child aside div:last-child div {
  */
 
 
-.rutor_1,
-.rutor_2 {
+#rutor_1,
+#rutor_2 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2,140px);
@@ -238,25 +236,25 @@ article:last-child aside div:last-child div {
     margin-top: 10px;
 }
 
-.rutor_1 div {
+#rutor_1 div {
     background-color: rgb(18, 17, 17);
     color: rgb(189, 22, 38);
     display: flex;
     align-items: center;
 }
 
-.rutor_1 div:nth-child(1) {
+#rutor_1 div:nth-child(1) {
    grid-column: 1 / span 4;
    border-radius: 20px 0 20px 20px;
 
 }
 
-.rutor_1 div:nth-child(2) {
+#rutor_1 div:nth-child(2) {
     grid-column: 5/ span 8;
     border-radius: 20px 20px 20px 0;
 }
 
-.rutor_1 div:nth-child(3) {
+#rutor_1 div:nth-child(3) {
     grid-column: 5/ span 4;
     grid-row: 2;
     border-radius: 0 20px 20px 20px;
@@ -267,14 +265,14 @@ article:last-child aside div:last-child div {
     color: whitesmoke;
 }
 
-.rutor_1 div:nth-child(4) {
+#rutor_1 div:nth-child(4) {
     grid-column: 9/ span 4;
     grid-row: 2;
     border-radius: 20px 20px 0 20px;
 }
 
-.rutor_1 p, 
-.rutor_2 p {
+#rutor_1 p, 
+#rutor_2 p {
     margin: 12px;
 }
 
@@ -283,24 +281,25 @@ article:last-child aside div:last-child div {
  * gridnät 2
  */
 
-.rutor_2 div {
+
+#rutor_2 div {
     background-color: rgb(40, 91, 118) ;
     color: rgb(28, 29, 30) ;
     display: flex;
     align-items: center;
 }
 
-.rutor_2 div:nth-child(1) {
+#rutor_2 div:nth-child(1) {
    grid-column: 1 / span 8;
    border-radius: 20px 20px 20px 0;
 }
 
-.rutor_2 div:nth-child(2) {
+#rutor_2 div:nth-child(2) {
     grid-column: 9/ span 4;
     border-radius: 0 20px 20px 20px;
 }
 
-.rutor_2 div:nth-child(3) {
+#rutor_2 div:nth-child(3) {
     grid-column: 1/ span 8;
     grid-row: 2;
     border-radius: 0 20px 20px 20px;
@@ -311,7 +310,7 @@ article:last-child aside div:last-child div {
     color: whitesmoke;
 }
 
-.rutor_2 div:nth-child(4) {
+#rutor_2 div:nth-child(4) {
     grid-column: 9/ span 4;
     grid-row: 2;
     border-radius: 20px 20px 0 20px;
@@ -343,8 +342,8 @@ article:last-child aside div:last-child div {
         font-size: 14px;
     }
 
-    .rutor_1 p,
-    .rutor_2 p {
+    #rutor_1 p,
+    #rutor_2 p {
         font-size: 14px;
     }
 
@@ -389,50 +388,51 @@ article:last-child aside div:last-child div {
         flex-grow: 1;
     }
 
-    .rutor_1 div:nth-child(1) {
+    #rutor_1 div:nth-child(1) {
         grid-column: 1 / span 3
     }
      
-     .rutor_1 div:nth-child(2) {
+    #rutor_1 div:nth-child(2) {
          grid-column: 7/ span 6;
     }
      
-     .rutor_1 div:nth-child(3) {
+    #rutor_1 div:nth-child(3) {
          grid-column: 4/ span 3;
          grid-row: 2;
     }
      
-     .rutor_1 div:nth-child(4) {
+    #rutor_1 div:nth-child(4) {
          grid-column: 7/ span 3;
          grid-row: 2;
     }
 
-    .rutor_2 div:nth-child(1) {
+    #rutor_2 div:nth-child(1) {
         grid-column: 1 / span 6;
         border-radius: 20px 20px 20px 0;
     }
     
-    .rutor_2 div:nth-child(2) {
+    #rutor_2 div:nth-child(2) {
         grid-column: 7/ span 3;
         border-radius: 0 20px 20px 20px;
     }
     
-    .rutor_2 div:nth-child(3) {
+    #rutor_2 div:nth-child(3) {
         grid-column: 4/ span 6;
         grid-row: 2;
         border-radius: 0 20px 20px 20px;
     }
     
-    .rutor_2 div:nth-child(4) {
+    #rutor_2 div:nth-child(4) {
         grid-column: 10/ span 3;
         grid-row: 2;
         border-radius: 20px 20px 0 20px;
     }
-    
 }
 
 
 /* Desktop version */
+
+
 @media (min-width: 800px) {
     h1 {
         color: rgb(244, 236, 236);
@@ -475,57 +475,61 @@ article:last-child aside div:last-child div {
         border-radius: 0 0 0 20px;
     }
 
-
-    .rutor_1,
-    .rutor_2 {
-        grid-template-rows: repeat(2,100px) ;
+    #rutor_1,
+    #rutor_2 {
+        grid-template-rows: repeat(2,100px);
     }
 
-    .rutor_1 div:nth-child(1) {
+    #rutor_1 div:nth-child(1) {
         grid-column: 1 / span 2;
         grid-row: 1/ span 2 ;
     }
      
-    .rutor_1 div:nth-child(2) {
+    #rutor_1 div:nth-child(2) {
          grid-column: 5/ span 4;
          grid-row: 1/ span 2 ;
     }
      
-    .rutor_1 div:nth-child(3) {
+    #rutor_1 div:nth-child(3) {
          grid-column: 9/ span 2;
          grid-row: 1/ span 2;
     }
      
-    .rutor_1 div:nth-child(4) {
+    #rutor_1 div:nth-child(4) {
          grid-column: 11/ span 2;
          grid-row: 1/ span 2;
     }
 
-    .rutor_2 div:nth-child(1) {
+    #rutor_2 div:nth-child(1) {
         grid-column: 1 / span 4;
         grid-row: 1/ span 2;
         border-radius: 20px 20px 20px 0;
     }
     
-    .rutor_2 div:nth-child(2) {
+    #rutor_2 div:nth-child(2) {
         grid-column: 5/ span 2;
         grid-row: 1/ span 2;
         border-radius: 0 20px 20px 20px;
-
     }
     
-    .rutor_2 div:nth-child(3) {
+    #rutor_2 div:nth-child(3) {
         grid-column: 7/ span 4;
         grid-row: 1/ span 2;
         border-radius: 0 20px 20px 20px;
     }
     
-    .rutor_2 div:nth-child(4) {
+    #rutor_2 div:nth-child(4) {
         grid-column: 11/ span 2;
         grid-row: 1/ span 2;
         border-radius: 20px 20px 0 20px;
     }
 }
+
+
+/*
+** Font-size från 900px 
+*/
+
 
     @media (min-width: 900px) {
         h1 {
@@ -548,16 +552,20 @@ article:last-child aside div:last-child div {
             font-size: 1.6vw;
         }
 
-        .rutor_1 p,
-        .rutor_2 p {
+        #rutor_1 p,
+        #rutor_2 p {
             font-size: 1.6vw;
         }
 
         nav a {
             font-size: 2vw;
         }
-     
     }
+
+
+/*
+** Font-size från 1200px 
+*/
 
 
     @media (min-width: 1200px) {
@@ -581,20 +589,13 @@ article:last-child aside div:last-child div {
             font-size: 19px;
         }
 
-        .rutor_1 p,
-        .rutor_2 p {
+        #rutor_1 p,
+        #rutor_2 p {
             font-size: 19px;
         }
 
         nav a {
             font-size: 24px;
         }
-
-
-    }
-
-
-
-
-
-   
+    }   
+    
