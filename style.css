@@ -19,12 +19,9 @@
 }
 
 
-
-
 :root {
     --font-size-changer: 1;
 }
-
 
 
 
@@ -36,7 +33,6 @@
 
 body {
     margin: 0;
-    height: 100vh;
     background-image: url(images/800px.jpg);
     background-position: center;
     background-size: cover;
@@ -60,29 +56,52 @@ h1 {
 h2 {
     font-family: 'Bungee_O';
     font-size: 8vw;
+    margin: 0;
+    margin-top: 10px;
 }
 
 h3 {
     font-family: 'Barlow_S';
     font-size: 4.5vw;
+    margin: 0;
 }
 
 aside h3 {
     font-family: 'Barlow_C';
     font-weight: bolder;
+    margin: 0;
 }
 
-ul li {
+.musicians {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+ul {
     list-style-type: none;
     font-size: 3.8vw;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 p {
     font-size: 3.8vw;
+    margin: 0;
 }
 
 ol {
     font-size: 3.2vw;
+    padding-left: 0.8em;
+    margin-top: 2px;
+}
+
+.rutor_1 p, 
+.rutor_2 p {
+    font-size: 2.8vw;
+}
+
+nav a {
+    font-size: 3.5vw;
 }
 
 
@@ -146,6 +165,10 @@ article {
     flex-direction: column;
 }
 
+article:last-child {
+    margin-bottom: 100px;
+}
+
 aside {
    display: flex;
    flex-direction: column;
@@ -154,7 +177,7 @@ aside {
 
 aside img {
     width: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 20px 0 0;
     display: block;
 }
 
@@ -180,9 +203,12 @@ aside > div:nth-child(2) {
 
 aside > div:nth-child(2) div {
     background-color: rgb(189, 22, 38);
-    color: rgb(58, 12, 19);
+    color: rgb(18, 17, 17);
+    flex-basis: 0;
     flex-grow: 1;
+    padding: 15px;
 }
+
 
 aside > div:nth-child(2) div:first-child {
     border-radius: 0 0 0 20px;
@@ -192,23 +218,31 @@ aside > div:nth-child(2) div:nth-child(2) {
     border-radius: 0 0 20px 0;
 }
 
+article:last-child aside div:last-child div {
+    background-color: rgb(28, 29, 30) !important;
+    color: rgb(40, 91, 118);
+}
+
 
 /*
  * gridnät 1
  */
 
 
-.rutor_1 {
+.rutor_1,
+.rutor_2 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2,100px);
+    grid-template-rows: repeat(2,140px);
     gap: 5px;
     margin-top: 10px;
 }
 
 .rutor_1 div {
-    background-color: rgb(58, 12, 19);
+    background-color: rgb(18, 17, 17);
     color: rgb(189, 22, 38);
+    display: flex;
+    align-items: center;
 }
 
 .rutor_1 div:nth-child(1) {
@@ -229,6 +263,8 @@ aside > div:nth-child(2) div:nth-child(2) {
     background-image: url(images/singer.jpg);
     background-size: cover;
     background-position: center;
+    align-items: end;
+    color: whitesmoke;
 }
 
 .rutor_1 div:nth-child(4) {
@@ -237,23 +273,21 @@ aside > div:nth-child(2) div:nth-child(2) {
     border-radius: 20px 20px 0 20px;
 }
 
+.rutor_1 p, 
+.rutor_2 p {
+    margin: 12px;
+}
+
 
 /*
  * gridnät 2
  */
 
-
-.rutor_2 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2,100px);
-    gap: 5px;
-    margin-top: 10px;
-}
-
 .rutor_2 div {
-    background-color: rgb(58, 12, 19);
-    color: rgb(21, 58, 97);
+    background-color: rgb(40, 91, 118) ;
+    color: rgb(28, 29, 30) ;
+    display: flex;
+    align-items: center;
 }
 
 .rutor_2 div:nth-child(1) {
@@ -273,6 +307,8 @@ aside > div:nth-child(2) div:nth-child(2) {
     background-image: url(images/group.jpg);
     background-size: cover;
     background-position: center;
+    align-items: end;
+    color: whitesmoke;
 }
 
 .rutor_2 div:nth-child(4) {
@@ -307,6 +343,15 @@ aside > div:nth-child(2) div:nth-child(2) {
         font-size: 14px;
     }
 
+    .rutor_1 p,
+    .rutor_2 p {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
     body {
         background-color: rgb(245, 241, 241);
         background-image: none;
@@ -315,6 +360,7 @@ aside > div:nth-child(2) div:nth-child(2) {
     main {
         background-color: rgb(140, 140, 140);
         border-radius: 30px;
+        margin: 50px 10px;
     }
 
     aside {
@@ -323,22 +369,24 @@ aside > div:nth-child(2) div:nth-child(2) {
 
     aside div:first-child {
         flex-basis: 0;
-        flex-grow: 4;
+        flex-grow: 2;
     }
 
     aside > div:nth-child(2) {
         flex-direction: column;
         flex-basis: 0;
-        flex-grow: 2;
+        flex-grow: 1;
     }
 
     aside > div:nth-child(2) div:first-child {
         border-radius: 0 20px 0 0;
         flex-basis: 0;
+        flex-grow: 1;
     }
 
     aside > div:nth-child(2) div:nth-child(2) {
         flex-basis: 0;
+        flex-grow: 1;
     }
 
     .rutor_1 div:nth-child(1) {
@@ -393,6 +441,7 @@ aside > div:nth-child(2) div:nth-child(2) {
 
     body {
         background-image: url(images/800pxdesktop.jpg);
+        padding: 100px 30px;
     }
 
     main {
@@ -426,6 +475,12 @@ aside > div:nth-child(2) div:nth-child(2) {
         border-radius: 0 0 0 20px;
     }
 
+
+    .rutor_1,
+    .rutor_2 {
+        grid-template-rows: repeat(2,100px) ;
+    }
+
     .rutor_1 div:nth-child(1) {
         grid-column: 1 / span 2;
         grid-row: 1/ span 2 ;
@@ -456,6 +511,7 @@ aside > div:nth-child(2) div:nth-child(2) {
         grid-column: 5/ span 2;
         grid-row: 1/ span 2;
         border-radius: 0 20px 20px 20px;
+
     }
     
     .rutor_2 div:nth-child(3) {
@@ -492,9 +548,15 @@ aside > div:nth-child(2) div:nth-child(2) {
             font-size: 1.6vw;
         }
 
+        .rutor_1 p,
+        .rutor_2 p {
+            font-size: 1.6vw;
+        }
 
-
-        
+        nav a {
+            font-size: 2vw;
+        }
+     
     }
 
 
@@ -518,6 +580,17 @@ aside > div:nth-child(2) div:nth-child(2) {
         ol {
             font-size: 19px;
         }
+
+        .rutor_1 p,
+        .rutor_2 p {
+            font-size: 19px;
+        }
+
+        nav a {
+            font-size: 24px;
+        }
+
+
     }
 
 
