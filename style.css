@@ -177,6 +177,8 @@ aside img {
     width: 100%;
     border-radius: 20px 20px 0 0;
     display: block;
+    object-fit: cover;
+    height: 100%;
 }
 
 aside > div:first-child {
@@ -598,4 +600,3 @@ article:last-child aside div:last-child div {
             font-size: 24px;
         }
     }   
-    
